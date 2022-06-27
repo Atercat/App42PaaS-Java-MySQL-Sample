@@ -49,6 +49,7 @@ public class DBManager {
 			dataSource.setPassword(password);
 		} catch (Exception e) {
 			e.printStackTrace();
+			throw new RuntimeException(e);
 		}
 	}
 
