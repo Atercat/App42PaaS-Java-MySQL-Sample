@@ -62,7 +62,7 @@ public class FormSave extends HttpServlet {
 		} catch (Exception ex) {
 			String message = ex.getMessage();
 			Throwable inner = null;
-			Throwable root = e;
+			Throwable root = ex;
 			while ((inner = root.getCause()) != null)
 			{
 				message += " " + inner.getMessage();
